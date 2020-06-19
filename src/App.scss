@@ -1,0 +1,60 @@
+$main-container-height: 87vh;
+$navbar-height: 13vh;
+
+/* Navbar style */
+.navbar {
+  height: $navbar-height;
+  text-transform: uppercase;
+
+  .name {
+    text-align: left;
+    margin-left: 1.5rem;
+
+    a {
+      color: black;
+      font-size: 25px;
+      margin: 0 0 0 0.5rem;
+      text-decoration: none;
+    }
+
+    .box {
+      height: 15px;
+      width: 15px;
+      background-color: blue;
+      display: inline-block;
+    }
+  }
+
+  .nav-list {
+    a {
+      color: black;
+      margin: 0 1.5rem;
+    }
+
+    a:hover {
+      color: #519df9;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Homepage Style */
+
+.main-box {
+  height: $main-container-height;
+  min-width: 50%;
+
+  .left-main-box {
+    height: $main-container-height;
+    width: 40vw;
+    display: inline-block;
+    background-color: #e8c9c9;
+  }
+
+  .right-main-box {
+    display: inline-block;
+    height: $main-container-height;
+    width: 60vw;
+    background-color: white;
+  }
+}
