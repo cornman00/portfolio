@@ -36,13 +36,20 @@ $navbar-height: 13vh;
       text-decoration: none;
     }
   }
+
+  @media screen and (max-width: 655px) {
+    .nav-list {
+      display: none;
+    }
+  }
 }
 
 /* Homepage Style */
 
 .main-box {
   height: $main-container-height;
-  min-width: 50%;
+  min-width: 980px;
+  overflow: hidden;
 
   .left-main-box {
     height: $main-container-height;
@@ -56,5 +63,19 @@ $navbar-height: 13vh;
     height: $main-container-height;
     width: 60vw;
     background-color: white;
+  }
+}
+
+/* Homepage center box style */
+
+.main-center-box {
+  z-index: 1;
+  justify-content: center;
+
+  .left-center-box {
+    background-color: yellow;
+  }
+  .right-center-box {
+    background-color: green;
   }
 }
