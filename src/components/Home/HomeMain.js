@@ -5,10 +5,14 @@ import Footer from "./Footer";
 export class HomeMain extends Component {
   render() {
     return (
-      <div className="main-box ">
-        <div className="left-main-box">left</div>
-        <div className="right-main-box">right</div>
-      </div>
+      <>
+        <div className="main-box">
+          <div className="left-main-box"></div>
+          <div className="right-main-box"></div>
+
+          <CenterBox />
+        </div>
+      </>
     );
   }
 }
