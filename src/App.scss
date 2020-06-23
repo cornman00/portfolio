@@ -1,6 +1,24 @@
 $main-container-height: 87vh;
 $navbar-height: 13vh;
 
+@mixin bullet {
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  display: inline-block;
+}
+
+@mixin resume-box {
+  background-color: white;
+  height: 350px;
+  width: 700px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 3px #e7e3e3;
+  -moz-box-shadow: 0 0 10px 3px #e7e3e3;
+  box-shadow: 0 0 10px 3px #e7e3e3;
+}
+
 /* Navbar style */
 .navbar {
   height: $navbar-height;
@@ -18,11 +36,8 @@ $navbar-height: 13vh;
       text-decoration: none;
     }
 
-    .box {
-      height: 15px;
-      width: 15px;
-      background-color: blue;
-      display: inline-block;
+    .name-bullet {
+      @include bullet;
     }
   }
 
@@ -50,6 +65,7 @@ $navbar-height: 13vh;
 .main-box {
   height: $main-container-height;
   position: relative;
+  overflow: hidden;
 
   .left-main-box {
     height: $main-container-height;
@@ -72,10 +88,9 @@ $navbar-height: 13vh;
 .main-center-box {
   position: absolute;
   width: 800px;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  top: calc(70% - 800px / 2);
+  left: calc(50% - 800px / 2);
+  background-color: blue;
 
   .left-center-box {
     background-color: #faf7f4;
@@ -88,5 +103,97 @@ $navbar-height: 13vh;
     display: inline-block;
     width: 50%;
     height: 550px;
+  }
+}
+
+/* Resume Style */
+
+.resume-main-box {
+  background-color: #ede7dd;
+  height: 100%;
+
+  .resume-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-wrapper {
+      padding: 0;
+      margin: 70px 0 50px 0;
+      .resume-bullet {
+        @include bullet;
+        margin-bottom: 4px;
+        height: 20px;
+        width: 20px;
+      }
+      .resume-name {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // education section
+
+  .education-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #education-tag {
+      margin-bottom: 40px;
+      margin-right: 545px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .education-box-1 {
+      @include resume-box;
+      margin-bottom: 80px;
+      .left-box {
+        padding: 40px 50px 40px 50px;
+        text-align: left;
+        width: 40%;
+        display: inline-block;
+
+        .college-years {
+          color: blue;
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .college-name {
+          font-weight: bold;
+          margin-bottom: 7px;
+        }
+
+        .college-degree {
+          margin-bottom: 10px;
+        }
+
+        .major {
+          margin-bottom: 20px;
+        }
+
+        .minor {
+        }
+      }
+      .right-box {
+        width: 60%;
+        display: inline-block;
+        padding: 0 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  // Coursework and Skills section
+  .course-skill-section {
+    @include resume-box;
+    padding: 40px 50px 40px 50px;
   }
 }

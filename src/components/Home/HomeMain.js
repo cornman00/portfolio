@@ -9,7 +9,6 @@ export class HomeMain extends Component {
         <div className="main-box">
           <div className="left-main-box"></div>
           <div className="right-main-box"></div>
-
           <CenterBox />
         </div>
       </>

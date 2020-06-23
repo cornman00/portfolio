@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="name">
-        <div className="box block"></div>
+        <div className="name-bullet"></div>
         <Link to="/">
           <strong>Seokhyun Kim</strong>
         </Link>
