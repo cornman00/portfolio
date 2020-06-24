@@ -4,7 +4,7 @@ import ProjectBox from "./ProjectBox";
 export class ProjectMain extends Component {
   render() {
     return (
-      <div>
+      <div className="project-main-box">
         hello from ProjectMain
         <ProjectBox />
       </div>

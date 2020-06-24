@@ -14,9 +14,9 @@ $navbar-height: 13vh;
   width: 700px;
   margin: auto;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px 3px #e7e3e3;
-  -moz-box-shadow: 0 0 10px 3px #e7e3e3;
-  box-shadow: 0 0 10px 3px #e7e3e3;
+  -webkit-box-shadow: 0 0 15px 3px #b0abaa;
+  -moz-box-shadow: 0 0 15px 3px #b0abaa;
+  box-shadow: 0 0 15px 3px #b0abaa;
 }
 
 /* Navbar style */
@@ -146,7 +146,7 @@ $navbar-height: 13vh;
 
     #education-tag {
       margin-bottom: 40px;
-      margin-right: 545px;
+      margin-right: 560px;
       font-weight: bold;
       font-size: 30px;
     }
@@ -178,9 +178,6 @@ $navbar-height: 13vh;
         .major {
           margin-bottom: 20px;
         }
-
-        .minor {
-        }
       }
       .right-box {
         width: 60%;
@@ -191,9 +188,153 @@ $navbar-height: 13vh;
     }
   }
 
-  // Coursework and Skills section
-  .course-skill-section {
-    @include resume-box;
-    padding: 40px 50px 40px 50px;
+  // Skill section
+
+  .skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #skill-tag {
+      margin-bottom: 40px;
+      margin-right: 630px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .skill-box {
+      @include resume-box;
+      margin-bottom: 80px;
+      padding: 40px 50px 40px 50px;
+    }
+
+    .proficiency-tag {
+      display: inline-block;
+      margin-left: 5px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .proficiency-bullet {
+      @include bullet;
+    }
+
+    .proficient {
+      margin-bottom: 45px;
+    }
+
+    .intermediate {
+      margin-bottom: 45px;
+    }
   }
+
+  // Coursework section
+  // .course-section {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+
+  //   #course-tag {
+  //     margin-bottom: 40px;
+  //     margin-right: 530px;
+  //     font-weight: bold;
+  //     font-size: 30px;
+  //   }
+  //   .course-box {
+  //     @include resume-box;
+  //     margin-bottom: 80px;
+  //     padding: 40px 50px 40px 50px;
+  //   }
+
+  //   .course-bullet {
+  //     @include bullet;
+  //   }
+
+  //   .course-list {
+  //     display: inline-block;
+  //     margin-left: 10px;
+  //     font-size: 20px;
+  //   }
+
+  //   .course-list-row {
+  //     margin-bottom: 20px;
+  //   }
+  .course-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    #course-tag {
+      margin-bottom: 40px;
+      margin-right: 530px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .course-list-box {
+      background-color: white;
+      height: 350px;
+      width: 700px;
+      margin: auto;
+      overflow: hidden;
+      box-shadow: 0 0 15px 3px #b0abaa;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 50px 40px 50px;
+
+      .course-list {
+        flex: 0 0 50%;
+        position: relative;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      .course-list:before {
+        content: "";
+        // position: absolute;
+        @include bullet;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // Additional Information Section
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #info-tag {
+      margin-bottom: 40px;
+      margin-right: 390px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .info-box {
+      @include resume-box;
+      height: 150px;
+      margin-bottom: 80px;
+      padding: 40px 50px 40px 50px;
+    }
+
+    .info-bullet {
+      @include bullet;
+    }
+
+    .info-list {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+/* Projects Style */
+.project-main-box {
+  background-color: #ede7dd;
+  height: 100%;
 }
