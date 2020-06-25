@@ -19,6 +19,17 @@ $navbar-height: 13vh;
   box-shadow: 0 0 15px 3px #b0abaa;
 }
 
+@mixin project-box {
+  background-color: white;
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 15px 3px #b0abaa;
+  -moz-box-shadow: 0 0 15px 3px #b0abaa;
+  box-shadow: 0 0 15px 3px #b0abaa;
+}
+
 /* Navbar style */
 .navbar {
   height: $navbar-height;
@@ -228,38 +239,6 @@ $navbar-height: 13vh;
     }
   }
 
-  // Coursework section
-  // .course-section {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: column;
-
-  //   #course-tag {
-  //     margin-bottom: 40px;
-  //     margin-right: 530px;
-  //     font-weight: bold;
-  //     font-size: 30px;
-  //   }
-  //   .course-box {
-  //     @include resume-box;
-  //     margin-bottom: 80px;
-  //     padding: 40px 50px 40px 50px;
-  //   }
-
-  //   .course-bullet {
-  //     @include bullet;
-  //   }
-
-  //   .course-list {
-  //     display: inline-block;
-  //     margin-left: 10px;
-  //     font-size: 20px;
-  //   }
-
-  //   .course-list-row {
-  //     margin-bottom: 20px;
-  //   }
   .course-section {
     display: flex;
     justify-content: center;
@@ -278,7 +257,6 @@ $navbar-height: 13vh;
       background-color: white;
       height: 350px;
       width: 700px;
-      margin: auto;
       overflow: hidden;
       box-shadow: 0 0 15px 3px #b0abaa;
       display: flex;
@@ -290,13 +268,12 @@ $navbar-height: 13vh;
         position: relative;
         font-size: 20px;
         margin-top: 20px;
-      }
 
-      .course-list:before {
-        content: "";
-        // position: absolute;
-        @include bullet;
-        margin-right: 10px;
+        &:before {
+          content: "";
+          @include bullet;
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -334,7 +311,80 @@ $navbar-height: 13vh;
 }
 
 /* Projects Style */
+
 .project-main-box {
   background-color: #ede7dd;
+  padding-bottom: 100px;
+  margin: 0;
   height: 100%;
+
+  // project header style
+  .project-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .header-wrapper {
+      padding: 0;
+      margin: 70px 0 0 0;
+      .project-bullet {
+        @include bullet;
+        margin-bottom: 4px;
+        height: 20px;
+        width: 20px;
+      }
+      .project-name {
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 5px;
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // ProjectBox Component Style
+  .main-container {
+    @include project-box;
+    margin-top: 80px;
+
+    .proj-description {
+      display: inline-block;
+      width: 55%;
+      position: relative;
+      height: 100%;
+
+      .description-header {
+        background: blue;
+        width: 10px;
+        height: 50px;
+        position: absolute;
+        margin-top: 50px;
+        h4 {
+          margin-left: 35px;
+          font-weight: bold;
+          color: blue;
+        }
+      }
+
+      p {
+        position: absolute;
+        margin: 130px 30px 0px 30px;
+      }
+
+      .stacks {
+        position: absolute;
+        margin: 220px 30px;
+      }
+    }
+
+    .img-container {
+      width: 45%;
+      height: 100%;
+      display: inline-block;
+      overflow: hidden;
+    }
+  }
 }

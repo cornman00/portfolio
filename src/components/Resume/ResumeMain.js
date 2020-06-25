@@ -11,6 +11,7 @@ export class ResumeMain extends Component {
             <div className="resume-name">Resume</div>
           </div>
         </div>
+
         {/* Education Section */}
         <div className="education-section">
           <div>
@@ -39,6 +40,7 @@ export class ResumeMain extends Component {
             </div>
           </div>
         </div>
+
         {/* Skills Section */}
         <div className="skill-section">
           <div>
@@ -67,45 +69,13 @@ export class ResumeMain extends Component {
             </div>
           </div>
         </div>
-        {/* Coursework Section */}
-        {/* <div className="course-section">
-          <div>
-            <h2 id="course-tag">Coursework</h2>
-          </div>
-          <div className="course-box">
-            <div className="course-list-row">
-              <div className="course-bullet"></div>
-              <div className="course-list">Data Structures</div>
-              <div className="course-bullet"></div>
-              <div className="course-list">Computer Architecture</div>
-            </div>
-            <div className="course-list-row">
-              <div className="course-bullet"></div>
-              <div className="course-list">Numerical Analysis</div>
-              <div className="course-bullet"></div>
-              <div className="course-list">Numerical Methods</div>
-            </div>
-            <div className="course-list-row">
-              <div className="course-bullet"></div>
-              <div className="course-list">Discrete Structures</div>
-              <div className="course-bullet"></div>
-              <div className="course-list">Intro to Computer Science</div>
-            </div>
-            <div className="course-list-row">
-              <div className="course-bullet"></div>
-              <div className="course-list">Applied Linear Algebra</div>
-              <div className="course-bullet"></div>
-              <div className="course-list">Physics Courses</div>
-            </div>
-          </div>
-        </div> */}
 
+        {/* Coursework Section */}
         <div class="course-section">
           <div className="course-box">
             <div>
               <h2 id="course-tag">Coursework</h2>
             </div>
-
             <div class="course-list-box">
               <div class="course-list">Data Structures</div>
               <div class="course-list">Computer Architecture</div>
@@ -118,6 +88,7 @@ export class ResumeMain extends Component {
             </div>
           </div>
         </div>
+
         {/* Additional Information Section */}
         <div className="info-section">
           <div>
