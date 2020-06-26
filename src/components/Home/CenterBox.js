@@ -10,7 +10,6 @@ export class CenterBox extends Component {
           <img src={Profile} alt="Profile picture"></img>
           <h2>Seokhyun Kim</h2>
           <div className="underline"></div>
-          <p style={{ marginTop: "20px", marginBottom: "0px" }}>(Future)</p>
           <p className="job-title">Software Engineer</p>
           <div className="icons">
             <ul>
