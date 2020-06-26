@@ -20,7 +20,7 @@ export class ProjectMain extends Component {
           title="Spotify"
           img={Spotify}
           url="https://spotify-search-app.herokuapp.com/"
-          description="You can search artists and see their albums and tracks. It will direct you to Spotify website when you click the play button"
+          description="You can search artists and see their albums and tracks. It will direct you to Spotify website when you click the play button."
           stacks={[
             "ReactJS",
             "Bootstrap",
