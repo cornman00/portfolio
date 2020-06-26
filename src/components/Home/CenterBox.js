@@ -55,7 +55,7 @@ export class CenterBox extends Component {
             Engineering Physics with a minor in Computer Science. I am looking
             for an opportunity to develop my career as a software engineer.
           </p>
-          <p>Email: willrhee00@gmail.com</p>
+          <h6>Email: willrhee00@gmail.com</h6>
         </div>
       </div>
     );

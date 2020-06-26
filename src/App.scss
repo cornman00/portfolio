@@ -1,6 +1,6 @@
-$main-container-height: 80vh;
+$main-container-height: 81vh;
 $navbar-height: 13vh;
-$footer-height: 7vh;
+$footer-height: 6vh;
 
 @mixin bullet {
   height: 15px;
@@ -206,6 +206,8 @@ $footer-height: 7vh;
 
     #about-me {
       margin-top: 50px;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
     }
   }
 }
@@ -287,7 +289,7 @@ $footer-height: 7vh;
         width: 60%;
         display: inline-block;
         padding: 0 25px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
     }
   }
