@@ -1,5 +1,6 @@
-$main-container-height: 87vh;
+$main-container-height: 80vh;
 $navbar-height: 13vh;
+$footer-height: 7vh;
 
 @mixin bullet {
   height: 15px;
@@ -479,4 +480,14 @@ $navbar-height: 13vh;
       overflow: hidden;
     }
   }
+}
+
+/* Footer Style */
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }

@@ -7,6 +7,7 @@ import ProjectMain from "./components/Projects/ProjectMain";
 import ResumeMain from "./components/Resume/ResumeMain";
 import Navbar from "./components/Navbar";
 import Default from "./components/Default";
+import Footer from "./components/Home/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/projects" component={ProjectMain} />
         <Route component={Default} />
       </Switch>
+      <Footer />
     </>
   );
 }
