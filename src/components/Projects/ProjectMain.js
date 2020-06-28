@@ -4,6 +4,7 @@ import Covid19 from "../../Images/covid19.jpg";
 import Spotify from "../../Images/spotify-logo.jpg";
 import FormValidation from "../../Images/form-validation.png";
 import Ecommerce from "../../Images/ecommerce.png";
+import iShoes from "../../Images/iShoes.png";
 
 export class ProjectMain extends Component {
   render() {
@@ -45,7 +46,7 @@ export class ProjectMain extends Component {
         />
         <ProjectBox
           title="iShoes"
-          img={Ecommerce}
+          img={iShoes}
           url="https://react-shoes-store.netlify.app/"
           description="An e-commerce website showing various products for sale accompanied by a shopping cart feature."
           stacks={["ReactJS", "Bootstrap", "Netlify"]}
@@ -55,7 +56,7 @@ export class ProjectMain extends Component {
           img={FormValidation}
           url="https://heuristic-bohr-3c4412.netlify.app/"
           description="A simple form validation app that checks username, email, and passwords."
-          stacks={["Javascript", "CSS", "HTML", "Netlify"]}
+          stacks={["Netlify"]}
         />
       </div>
     );

@@ -39,12 +39,12 @@ export class CenterBox extends Component {
           <p id="header-2">Here's who I am &amp; what I do</p>
           <div className="buttons">
             <Link to="/resume">
-              <button id="button1" className="btn btn-primary ">
+              <button type="button" id="button1" className="btn btn-primary ">
                 RESUME
               </button>
             </Link>
             <Link to="/projects">
-              <button id="button2" className="btn btn-primary">
+              <button type="button" id="button2" className="btn btn-primary">
                 PROJECTS
               </button>
             </Link>
