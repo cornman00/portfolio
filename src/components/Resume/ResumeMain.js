@@ -97,7 +97,7 @@ export class ResumeMain extends Component {
           <div className="info-box">
             <div>
               <div className="info-bullet"></div>
-              <div className="info-list" style={{ marginBottom: "15px" }}>
+              <div className="info-list">
                 Engineering Visionary Scholarship recipient
               </div>
             </div>
