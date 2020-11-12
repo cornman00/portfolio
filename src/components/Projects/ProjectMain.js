@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProjectBox from "./ProjectBox";
 import Covid19 from "../../Images/covid19.jpg";
-import Spotify from "../../Images/spotify-logo.jpg";
+import Spotify from "../../Images/spotify-logo.png";
 import FormValidation from "../../Images/form-validation.png";
 import Ecommerce from "../../Images/ecommerce.png";
 import iShoes from "../../Images/iShoes.png";
@@ -14,7 +14,11 @@ export class ProjectMain extends Component {
           <div className="header-wrapper">
             <div className="project-bullet"></div>
             <div className="project-name">Projects</div>
-            <h4>You can see the websites if you click them</h4>
+            <h4>Click the images to see the websites</h4>
+            <h5>
+              (Some websites might take few seconds to open because of the
+              characteristics of Heroku)
+            </h5>
           </div>
         </div>
         <ProjectBox
