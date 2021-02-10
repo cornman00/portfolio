@@ -5,6 +5,7 @@ import Spotify from "../../Images/spotify-logo.png";
 import FormValidation from "../../Images/form-validation.png";
 import Ecommerce from "../../Images/ecommerce.png";
 import iShoes from "../../Images/iShoes.png";
+import Hangman from "../../Images/hangman.jpg";
 
 export class ProjectMain extends Component {
   render() {
@@ -33,6 +34,13 @@ export class ProjectMain extends Component {
             "Spotify API",
             "Heroku",
           ]}
+        />
+        <ProjectBox
+          title="Hangman Game"
+          img={Hangman}
+          url="https://hangman00.herokuapp.com/"
+          description="A simple hangman game"
+          stacks={["Javascript", "HTML", "CSS", "NodeJS / Express", "Heroku"]}
         />
         <ProjectBox
           title="CoronaTrace"

@@ -56,8 +56,8 @@ export class ResumeMain extends Component {
               <div className="proficiency-bullet"></div>
               <div className="proficiency-tag">Intermediate: </div>
               <p className="intermediate-list">
-                React, CSS, Bootstrap, Node.js, MySQL, MongoDB, Numpy,
-                Matplotlib, Flask
+                React, CSS, Bootstrap, Node.js, MySQL, MongoDB, AWS, Heroku,
+                Flask
               </p>
             </div>
 
@@ -65,7 +65,9 @@ export class ResumeMain extends Component {
               <span>
                 <div className="proficiency-bullet"></div>
                 <div className="proficiency-tag">Familiar: </div>
-                <p className="familiar-list"> Sass, Octave </p>
+                <p className="familiar-list">
+                  Sass, Octave, Numpy, Matplotlib,
+                </p>
               </span>
             </div>
           </div>
