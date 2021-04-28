@@ -50,14 +50,13 @@ export class ResumeMain extends Component {
             <div className="proficient">
               <div className="proficiency-bullet"></div>
               <div className="proficiency-tag">Proficient: </div>
-              <p className="proficient-list">C++, Python, JavaScript, HTML</p>
+              <p className="proficient-list">Python, JavaScript, Typescript, HTML, CSS React.js</p>
             </div>
             <div className="intermediate">
               <div className="proficiency-bullet"></div>
               <div className="proficiency-tag">Intermediate: </div>
               <p className="intermediate-list">
-                React, CSS, Bootstrap, Node.js, MySQL, MongoDB, AWS, Heroku,
-                Flask
+                C++, Java, Material-UI, Node.js, Flask, PostgreSQL, MySQL, MongoDB, AWS, Heroku, Docker   
               </p>
             </div>
 

@@ -50,9 +50,9 @@ export class CenterBox extends Component {
             </Link>
           </div>
           <p id="about-me">
-            I recently graduated from UIUC and received a bachelor’s degree in
-            Engineering Physics with a minor in Computer Science. I am looking
-            for an opportunity to develop my career as a software engineer.
+            I graduated from UIUC and received a bachelor’s degree in
+            Engineering Physics with a minor in Computer Science. I have done many personal projects and been working on 
+            a team project which is building a website for a start-up company.
           </p>
           <h6>Email: willrhee00@gmail.com</h6>
         </div>
